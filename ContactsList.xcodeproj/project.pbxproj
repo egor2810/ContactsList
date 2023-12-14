@@ -49,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F70248D52B2BA28A007AEEF1 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				F70248D32B2B99C5007AEEF1 /* CustomHeader.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
 		F7C131FF2B2B2A2500D03468 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +76,7 @@
 		F7C1320A2B2B2A2500D03468 /* ContactsList */ = {
 			isa = PBXGroup;
 			children = (
+				F70248D52B2BA28A007AEEF1 /* UIModels */,
 				F7C132222B2B2D3500D03468 /* Models */,
 				F7C1321F2B2B2BA400D03468 /* ViewControllers */,
 				F7C132212B2B2C1000D03468 /* Storyboards */,
@@ -112,7 +121,6 @@
 			children = (
 				F7C132232B2B2D4D00D03468 /* Person.swift */,
 				F7C132252B2B2DE200D03468 /* DataStore.swift */,
-				F70248D32B2B99C5007AEEF1 /* CustomHeader.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
