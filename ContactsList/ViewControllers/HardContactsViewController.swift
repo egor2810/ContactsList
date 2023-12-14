@@ -8,9 +8,7 @@
 import UIKit
 
 final class HardContactsViewController: UITableViewController {
-    
     var persons: [Person]!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +29,6 @@ extension HardContactsViewController {
             withIdentifier: "hardCell",
             for: indexPath
         )
-        
         let person = persons[indexPath.section]
         let icons = ["phone.fill", "envelope.fill"]
         
@@ -39,6 +36,7 @@ extension HardContactsViewController {
         content.text = person.contactData[indexPath.row]
         content.image = UIImage(systemName: icons[indexPath.row])
         cell.contentConfiguration = content
+        
         return cell
     }
     

@@ -19,7 +19,6 @@ class CustomHeader: UITableViewHeaderFooterView {
         fatalError("init(coder:) has not been implemented")
     }
     
-
     func configureContents() {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.textColor = .gray
@@ -32,6 +31,5 @@ class CustomHeader: UITableViewHeaderFooterView {
                    contentView.layoutMarginsGuide.trailingAnchor),
             title.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ])
-        
     }
 }

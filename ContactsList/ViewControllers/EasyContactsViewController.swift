@@ -7,12 +7,11 @@
 
 import UIKit
 
-class EasyContactsViewController: UITableViewController {
+final class EasyContactsViewController: UITableViewController {
     
     var persons: [Person]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         let detailedVC = segue.destination as? EasyDetailedViewController
         guard let selectedRowIndex = tableView.indexPathForSelectedRow?.row
         else { return }
@@ -33,7 +32,6 @@ extension EasyContactsViewController {
             withIdentifier: "easyCell",
             for: indexPath
         )
-        
         let person = persons[indexPath.row]
         
         var content = cell.defaultContentConfiguration()

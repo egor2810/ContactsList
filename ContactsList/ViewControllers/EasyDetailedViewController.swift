@@ -8,7 +8,6 @@
 import UIKit
 
 final class EasyDetailedViewController: UIViewController {
-
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
@@ -18,10 +17,7 @@ final class EasyDetailedViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = personInfo.fullName
-
         phoneNumberLabel.text = personInfo.phoneNumber
         emailLabel.text = personInfo.email
-
     }
-
 }
